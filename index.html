@@ -19,7 +19,7 @@
             padding: 15px 0;
         }
         main {
-            padding: 20px;
+            padding: 20px 20px 90px; /* extra bottom space so the fixed footer never covers the FAQ */
         }
         .contact-info {
             background-color: white;
@@ -41,6 +41,18 @@
         a:hover {
             text-decoration: underline;
         }
+        .scam-alert {
+            background-color: #FFF4F4;
+            border: 3px solid #C62828;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(198, 40, 40, 0.25);
+            padding: 15px 20px;
+            margin-bottom: 20px;
+        }
+        .scam-alert h2 {
+            color: #C62828;
+            margin-top: 0;
+        }
         footer {
             text-align: center;
             background-color: #3F820C; /* Nuevo color verde */
@@ -59,6 +71,16 @@
 </header>
 
 <main>
+    <section class="scam-alert" role="alert">
+        <h2>&#9888;&#65039; Scam Warning: Fraudulent Subscription Charges</h2>
+        <p><strong>Some people have been charged for a subscription using the name of Veggie Mania. This is a scam.</strong> We do not charge any subscription and have nothing to do with these charges.</p>
+        <p><strong>What to do if you were charged:</strong></p>
+        <ul>
+            <li>Contact your bank or card provider as soon as possible to cancel the payment and request a refund.</li>
+            <li>If you have any information about the scammer (name, email, website, payment details, messages received), please share it with us through our social media channels listed below so we can help stop them.</li>
+        </ul>
+    </section>
+
     <section class="contact-info">
         <h2>Need Help with Veggie Mania?</h2>
         <p>If you have any questions or need assistance, we are here to help. Below you'll find ways to get in touch with us.</p>
@@ -67,7 +89,6 @@
         <p><strong>Social Media:</strong></p>
         <ul>
             <li><a href="https://www.facebook.com/veggiemaniagame" target="_blank">Facebook</a></li>
-            <li><a href="https://x.com/veggiemaniagame" target="_blank">Twitter</a></li>
             <li><a href="https://www.instagram.com/veggiemaniagame/" target="_blank">Instagram</a></li>
         </ul>
     </section>
